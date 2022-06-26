@@ -1,0 +1,7 @@
+.active {
+    text-decoration: underline;
+}
+
+mat-nav-list {
+    display: flex;
+}
