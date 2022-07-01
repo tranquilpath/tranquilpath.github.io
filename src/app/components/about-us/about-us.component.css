@@ -1,0 +1,22 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.person-card {
+    display: flex;
+    flex-flow: row wrap;
+    align-items:flex-start;
+    margin: 2rem;
+}
+
+.person-card img {
+    margin: 2rem;
+    width: 25rem;
+}
+
+.person-card .person-blurb {
+    display: inline-block;
+    max-width: 40rem;
+    min-width: 25rem;
+}
