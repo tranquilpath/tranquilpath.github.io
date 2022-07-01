@@ -1,5 +1,5 @@
-.active {
-    text-decoration: underline;
+.active, .active:link, .active:hover, .active:active, .active:focus, .active:visited {
+    background-color: rgba(0, 0, 0, .2);
 }
 
 mat-nav-list {
