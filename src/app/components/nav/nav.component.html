@@ -3,7 +3,7 @@
       attr.role="dialog"
       mode="over"
       position="end">
-    <app-nav-menu flexDirection="column"></app-nav-menu>
+    <app-nav-menu flexDirection="column" (linkClicked)="drawer.toggle()"></app-nav-menu>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="white">

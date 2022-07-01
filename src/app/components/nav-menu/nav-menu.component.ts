@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav-menu',
@@ -10,8 +10,13 @@ export class NavMenuComponent implements OnInit {
   constructor() { }
 
   @Input() flexDirection: 'row'|'column' = 'row';
+  @Output() linkClicked = new EventEmitter<boolean>();
 
   ngOnInit(): void {
+  }
+
+  linkClick() {
+    this.linkClicked.emit(true);
   }
 
 }

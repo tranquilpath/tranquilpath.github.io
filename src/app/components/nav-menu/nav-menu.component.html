@@ -1,6 +1,6 @@
 <mat-nav-list [ngStyle]="{'flex-direction': flexDirection}">
-  <a mat-list-item routerLink="home" routerLinkActive="active">Home</a>
-  <a mat-list-item routerLink="about" routerLinkActive="active">About Us</a>
-  <a mat-list-item routerLink="services" routerLinkActive="active">Services</a>
-  <a mat-list-item routerLink="contact" routerLinkActive="active">Contact</a>
+  <a mat-list-item routerLink="home" routerLinkActive="active" (click)="linkClick()">Home</a>
+  <a mat-list-item routerLink="about" routerLinkActive="active" (click)="linkClick()">About Us</a>
+  <a mat-list-item routerLink="services" routerLinkActive="active" (click)="linkClick()">Services</a>
+  <a mat-list-item routerLink="contact" routerLinkActive="active" (click)="linkClick()">Contact</a>
 </mat-nav-list>
