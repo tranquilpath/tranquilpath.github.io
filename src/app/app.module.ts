@@ -25,7 +25,7 @@ const routes: Route[] = [
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

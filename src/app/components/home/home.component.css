@@ -32,3 +32,34 @@
     top: 12rem;
     left: 10rem;
 }
+
+.banner {
+    background-image: linear-gradient(to right, #7FBF8E, #6DCECC);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.banner img {
+    margin-left: 5rem;
+    height: 25rem;
+}
+
+.banner div {
+    margin: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    flex-basis: 25rem;
+    flex-grow: 1;
+    max-width: 50rem;
+}
+
+.banner div p {
+    margin-bottom: 2rem;
+}
+
+.text-blurb {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 6rem;
+}
