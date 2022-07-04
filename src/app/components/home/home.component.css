@@ -31,3 +31,24 @@
     top: 12rem;
     left: 10rem;
 }
+
+#affiliations {
+    background-color: white;
+}
+
+#affiliations h2 {
+    padding: 1rem 0 0 5rem;
+}
+
+#affiliations>div {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#affiliations img {
+    height: 5rem;
+    margin: 1rem;
+}
