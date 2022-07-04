@@ -17,6 +17,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AffiliationsComponent } from './components/affiliations/affiliations.component';
 
 const routes: Route[] = [
   { path: 'home', component: HomeComponent },
@@ -36,7 +37,8 @@ const routes: Route[] = [
     ServicesComponent,
     ContactComponent,
     NavMenuComponent,
-    FooterComponent
+    FooterComponent,
+    AffiliationsComponent
   ],
   imports: [
     BrowserModule,
