@@ -37,7 +37,7 @@
     background-image: linear-gradient(to right, #7FBF8E, #6DCECC);
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items:flex-end;
 }
 
 .banner img {
@@ -46,9 +46,7 @@
 }
 
 .banner div {
-    margin: 2rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    margin: 4rem;
     flex-basis: 25rem;
     flex-grow: 1;
     max-width: 50rem;
@@ -60,6 +58,36 @@
 
 .text-blurb {
     max-width: 1200px;
-    margin: 5rem auto;
+    margin: 7rem auto;
     padding: 0 6rem;
+}
+
+p {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mat-expansion-panel:nth-child(odd) .mat-expansion-panel-header-title {
+    color: #2D6A3E;
+}
+
+.mat-expansion-panel:nth-child(even) .mat-expansion-panel-header-title {
+    color: #2D6A3E;
+}
+
+.mat-expansion-panel {
+    background-color: rgb(240, 240, 240);
+}
+
+.mat-expansion-panel-header-title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    letter-spacing: .08rem;
 }

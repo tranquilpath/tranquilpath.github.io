@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion'
 import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ServicesComponent } from './components/services/services.component';
@@ -52,6 +53,7 @@ const routes: Route[] = [
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatExpansionModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
