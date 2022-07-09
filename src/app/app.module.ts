@@ -18,12 +18,14 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AffiliationsComponent } from './components/affiliations/affiliations.component';
+import { GetStartedComponent } from './components/get-started/get-started.component';
 
 const routes: Route[] = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'get-started', component: GetStartedComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '**', redirectTo: 'home' }
 ];
@@ -38,7 +40,8 @@ const routes: Route[] = [
     ContactComponent,
     NavMenuComponent,
     FooterComponent,
-    AffiliationsComponent
+    AffiliationsComponent,
+    GetStartedComponent
   ],
   imports: [
     BrowserModule,
