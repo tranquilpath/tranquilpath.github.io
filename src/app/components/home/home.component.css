@@ -85,6 +85,10 @@ h2 {
     background-color: rgb(240, 240, 240);
 }
 
+.mat-expansion-panel-header {
+    height: auto !important;
+}
+
 .mat-expansion-panel-header-title {
     font-size: 1.5rem;
     line-height: 3rem;
@@ -100,3 +104,5 @@ h2 {
 #values p {
     margin-bottom: 0;
 }
+
+
