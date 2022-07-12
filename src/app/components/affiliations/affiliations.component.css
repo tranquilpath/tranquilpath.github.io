@@ -18,3 +18,31 @@
     height: 5rem;
     margin: 1rem;
 }
+
+.banner {
+    background-image: linear-gradient(to right, #7FBF8E, #6DCECC);
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    margin: 2rem 0 2rem 5rem;
+    height: 10rem;
+}
+
+@media(max-width: 600px) {
+    .banner img {
+        margin: 1rem 0 1rem 2rem;
+        height: 4rem;
+    }
+}
+
+
+.banner h2 {
+    margin: 0 5rem 0 0;
+    font-size: 2rem;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+}

@@ -21,3 +21,81 @@
     flex-grow: 1;
     max-width: 50rem;
 }
+
+.text-blurb {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 6rem;
+}
+
+.banner-text {
+    margin: 1rem 2rem;
+    display: inline-block;
+    flex-basis: 25rem;
+    flex-grow: 1;
+}
+
+.text-blurb h2, .banner-text h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.text-blurb h3, .banner-text h3 {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.text-blurb p, .banner-text p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cover img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+.text-overlay {
+    position: absolute;
+    padding: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#text-overlay-1 {
+    bottom: 5rem;
+    left: 15rem;
+    font-family: Courgette;
+}
+
+.banner {
+    background-image: linear-gradient(to right, #7FBF8E, #6DCECC);
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.banner img {
+    margin: 2rem 0 2rem 5rem;
+    height: 10rem;
+}
+
+@media(max-width: 600px) {
+    .banner img {
+        margin: 1rem 0 1rem 2rem;
+        height: 4rem;
+    }
+}
+
