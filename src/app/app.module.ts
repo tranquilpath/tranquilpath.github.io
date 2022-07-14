@@ -22,13 +22,12 @@ import { AffiliationsComponent } from './components/affiliations/affiliations.co
 import { GetStartedComponent } from './components/get-started/get-started.component';
 
 const routes: Route[] = [
-  { path: 'home', component: HomeComponent },
+  { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'get-started', component: GetStartedComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
