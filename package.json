@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish": "ng build --base-href \"https://www.tranquilfp.com\" && npx angular-cli-ghpages --dir=dist/tranquilpath"
+    "publish": "ng build --base-href \"https://www.tranquilfp.com\" && cp ./CNAME ./dist/CNAME && npx angular-cli-ghpages --dir=dist/tranquilpath"
   },
   "private": true,
   "dependencies": {
