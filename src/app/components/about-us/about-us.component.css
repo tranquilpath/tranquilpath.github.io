@@ -13,6 +13,7 @@
 .person-card img {
     margin-right: 2rem;
     width: 25rem;
+    max-width: 80vw;
 }
 
 .person-card .person-blurb {
@@ -26,6 +27,12 @@
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 6rem;
+}
+
+@media(max-width: 600px) {
+    .text-blurb {
+        padding: 0 2rem;
+    }
 }
 
 .banner-text {
@@ -76,7 +83,7 @@
 
 #text-overlay-1 {
     bottom: 5rem;
-    left: 15rem;
+    left: 5rem;
     font-family: Courgette;
 }
 
