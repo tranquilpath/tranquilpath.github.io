@@ -1,2 +1,37 @@
-<h1>Coming Soon!</h1>
-<button  mat-flat-button color="primary" (click)="openDialog()">Get Started</button>
+<div>
+  <div class="cover">
+    <img
+      alt="Image of a path through the woods"
+      src="https://images.unsplash.com/photo-1605196560547-b2f7281b7355?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+    />
+    <div id="text-overlay-1" class="text-overlay">Contact Us</div>
+  </div>
+  <div id="contact-content">
+    <div>
+      <p class="bold">Tranquil Path Financial Planning</p>
+      <p>Independence, OH 44131</p>
+      <p><mat-icon>phone</mat-icon>: (216) 270-6994</p>
+      <p><mat-icon>email</mat-icon>: Britta@TranquilFP.com</p>
+    </div>
+    <mat-divider vertical="true"></mat-divider>
+    <div>
+      <p class="bold">Remote-First Planning</p>
+      <p>
+        While our default meeting location is virtual via web conferencing
+        software, we are always happy to make any client meeting face-to-face.
+        Our temporary office space can be found near the intersection of
+        Rockside Road and I-77 in Independence, OH.
+      </p>
+    </div>
+  </div>
+  <div id="get-started">
+    <p class="bold">For New Clients</p>
+    <p>
+      If you are intested in learning more, please fill out some basic
+      information and we will be in touch with you as soon as possible.
+    </p>
+    <button mat-flat-button color="primary" (click)="openDialog()">
+      Get Started
+    </button>
+  </div>
+</div>
