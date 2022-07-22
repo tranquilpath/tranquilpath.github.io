@@ -44,7 +44,7 @@ const routes: Route[] = [
     GetStartedComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
@@ -54,7 +54,9 @@ const routes: Route[] = [
     MatListModule,
     MatExpansionModule,
     MatDialogModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+})
   ],
   providers: [],
   bootstrap: [AppComponent]
