@@ -7,11 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish": "ng build --base-href \"https://www.tranquilfp.com\" && cp ./CNAME ./dist/tranquilpath/CNAME && npx angular-cli-ghpages --dir=dist/tranquilpath",
     "dev:ssr": "ng run tranquilpath:serve-ssr",
     "serve:ssr": "node dist/tranquilpath/server/main.js",
     "build:ssr": "ng build && ng run tranquilpath:server",
-    "prerender": "ng run tranquilpath:prerender"
+    "prerender": "ng run tranquilpath:prerender",
+    "deploy": "scp -r ~/SRC/tranquilpath/dist/tranquilpath/* root@45.33.92.83://var/www/html/tranquilpath/dist/tranquilpath",
+    "restartserver": "ssh root@45.33.92.83 \"/usr/bin/pkill -2 node && cd /var/www/html/tranquilpath && /root/.nvm/versions/node/v16.16.0/bin/node ./dist/tranquilpath/server/main.js &\" &"
   },
   "private": true,
   "dependencies": {
